@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt & Hitta hit | Colour Mix Beauty</title>
+  <meta name="description" content="Kontakta Colour Mix Beauty eller boka din tid online. Här hittar du våra öppettider, adress och kontaktuppgifter.">
+  
+  <!-- Google Fonts: Playfair Display & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Colour Mix Beauty Hem">
+        <span class="brand-main">Colour Mix</span>
+        <span class="brand-sub">Beauty</span>
+      </a>
+
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Öppna meny" aria-expanded="false" aria-controls="main-nav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Huvudmeny">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Hem</a></li>
+          <li><a href="about.html" class="nav-link">Om oss</a></li>
+          <li><a href="contact.html" class="nav-link active">Kontakt & Hitta hit</a></li>
+        </ul>
+        <a href="YOUR_BOKADIREKT_LINK_HERE" class="btn btn-primary nav-cta" target="_blank" rel="noopener noreferrer">Boka tid</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-hero bg-blush">
+      <div class="container narrow-container text-center reveal">
+        <span class="eyebrow">Kontakt &amp; Hitta hit</span>
+        <h1 class="page-title">Vi ser fram emot att <em>välkomna dig</em></h1>
+        <p class="page-subtitle">
+          Har du frågor om vilken behandling som passar dig bäst, eller önskar du boka en kostnadsfri konsultation? Tveka inte att höra av dig.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Details & Form Section -->
+    <section class="section contact-section">
+      <div class="container contact-grid">
+        
+        <!-- Left Column: Info Cards -->
+        <div class="contact-info-wrapper reveal">
+          <div class="contact-card">
+            <span class="eyebrow">Direktbokning</span>
+            <h2 class="contact-card-title">Boka din tid online</h2>
+            <p class="contact-card-text">
+              Det snabbaste och enklaste sättet att hitta en tid som passar dig är via vår bokningssida på Bokadirekt.
+            </p>
+            <a href="YOUR_BOKADIREKT_LINK_HERE" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Till onlinebokningen</a>
+          </div>
+
+          <div class="contact-details-box">
+            <div class="detail-group">
+              <h3 class="detail-title">Besöksadress</h3>
+              <p>Strandvägen 14<br>114 56 Stockholm</p>
+            </div>
+
+            <div class="detail-group">
+              <h3 class="detail-title">Telefon &amp; E-post</h3>
+              <p>Telefon: <a href="tel:+4681234567" class="text-link">08-123 45 67</a></p>
+              <p>E-post: <a href="mailto:hej@colourmixbeauty.se" class="text-link">hej@colourmixbeauty.se</a></p>
+            </div>
+
+            <div class="detail-group">
+              <h3 class="detail-title">Öppettider</h3>
+              <ul class="contact-hours-list">
+                <li><span>Måndag – Fredag</span> <span>09:00 – 18:00</span></li>
+                <li><span>Torsdag</span> <span>10:00 – 20:00</span></li>
+                <li><span>Lördag</span> <span>10:00 – 15:00</span></li>
+                <li><span>Söndag &amp; Helgdag</span> <span>Stängt</span></li>
+              </ul>
+            </div>
+
+            <div class="detail-group policy-box">
+              <h3 class="detail-title">Avbokningsvillkor</h3>
+              <p>Eventuell avbokning eller ombokning sker senast 24 timmar innan din bokade tid via Bokadirekt. Ej avbokad tid debiteras med 50% av behandlingspriset.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Netlify Contact Form -->
+        <div class="contact-form-wrapper reveal">
+          <div class="form-container">
+            <span class="eyebrow">Skriv till oss</span>
+            <h2 class="contact-card-title">Skicka ett meddelande</h2>
+            <p class="contact-card-text">Fyll i formuläret nedan så återkommer vi till dig så snart vi har möjlighet, oftast inom 24 timmar.</p>
+
+            <form name="kontakt" method="POST" data-netlify="true" class="luxury-form">
+              <input type="hidden" name="form-name" value="kontakt">
+              
+              <div class="form-group">
+                <label for="name" class="form-label">Ditt namn *</label>
+                <input type="text" id="name" name="namn" class="form-input" placeholder="För- och efternamn" required>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email" class="form-label">E-postadress *</label>
+                  <input type="email" id="email" name="epost" class="form-input" placeholder="namn@exempel.se" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label">Telefonnummer</label>
+                  <input type="tel" id="phone" name="telefon" class="form-input" placeholder="070-123 45 67">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Ärende</label>
+                <select id="subject" name="arende" class="form-input">
+                  <option value="Allmän fråga">Allmän fråga</option>
+                  <option value="Konsultation färg/balayage">Rådgivning kring färg / Balayage</option>
+                  <option value="Brud & Fest">Brud &amp; Feststyling</option>
+                  <option value="Övrigt">Övrigt</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Meddelande *</label>
+                <textarea id="message" name="meddelande" rows="5" class="form-input" placeholder="Berätta hur vi kan hjälpa dig..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">Skicka meddelande</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Map & Directions Section -->
+    <section class="section map-section bg-cream-dark">
+      <div class="container">
+        <div class="section-header text-center reveal">
+          <span class="eyebrow">Hitta hit</span>
+          <h2 class="section-title">Vägbeskrivning &amp; Parkering</h2>
+          <p class="section-subtitle">
+            Salongen ligger centralt med goda förbindelser via kollektivtrafik samt parkeringsmöjligheter längs gatan precis utanför.
+          </p>
+        </div>
+
+        <div class="map-frame-wrapper reveal">
+          <!-- Embedded Google Map (Centered on Strandvägen, Stockholm - easy to replace with your own address) -->
+          <iframe 
+            title="Karta till Colour Mix Beauty"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.158720944149!2d18.0815393!3d59.3319784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d5952897151%3A0x600a737a0b60880!2sStrandv%C3%A4gen%2C%20Stockholm!5e0!3m2!1ssv!2sse!4v1700000000000!5m2!1ssv!2sse" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo footer-logo">
+          <span class="brand-main">Colour Mix</span>
+          <span class="brand-sub">Beauty</span>
+        </a>
+        <p class="footer-desc">
+          En exklusiv hårsalong med fokus på skräddarsydd färgdesign, tidlös klippning och lyxig hårvård i en rofylld miljö.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Meny</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="about.html">Om oss</a></li>
+          <li><a href="contact.html">Kontakt &amp; Hitta hit</a></li>
+          <li><a href="YOUR_BOKADIREKT_LINK_HERE" target="_blank" rel="noopener noreferrer">Boka tid</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Öppettider</h4>
+        <ul class="footer-hours">
+          <li><span>Måndag – Fredag</span> <span>09:00 – 18:00</span></li>
+          <li><span>Torsdag (Kvällsöppet)</span> <span>10:00 – 20:00</span></li>
+          <li><span>Lördag</span> <span>10:00 – 15:00</span></li>
+          <li><span>Söndag</span> <span>Stängt</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Kontakt</h4>
+        <address class="footer-address">
+          <p>Strandvägen 14<br>114 56 Stockholm</p>
+          <p><a href="tel:+4681234567">08-123 45 67</a></p>
+          <p><a href="mailto:hej@colourmixbeauty.se">hej@colourmixbeauty.se</a></p>
+        </address>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="current-year">2026</span> Colour Mix Beauty. Alla rättigheter förbehållna.</p>
+    </div>
+  </footer>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
